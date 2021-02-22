@@ -58,6 +58,10 @@ body {
   font-size: 1.7rem;
   font-weight: 700;
   text-transform: uppercase;
+
+  &:hover {
+    color: $color-primary-light;
+  }
 }
 
 .paragraph {
