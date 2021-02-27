@@ -2,10 +2,10 @@
   "name": "natours",
   "version": "1.0.0",
   "description": "Landing page for natours",
-  "homepage": "https://github.com/AntonRufus/SASS_CSS#readme",
+  "homepage": "https://github.com/AntonRufus/Nature_Tours/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AntonRufus/SASS_CSS.git"
+    "url": "git+https://github.com/AntonRufus/Nature_Tours.git"
   },
   "author": "Anton Zhyvotovskyi",
   "license": "ISC",
@@ -14,7 +14,7 @@
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "bugs": {
-    "url": "https://github.com/AntonRufus/SASS_CSS/issues"
+    "url": "https://github.com/AntonRufus/Nature_Tours/issues"
   },
   "devDependencies": {
     "node-sass": "^5.0.0"
