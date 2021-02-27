@@ -2,7 +2,7 @@
   position: relative;
 
   &__photo {
-    border-radius: 2px;
+    border-radius: $border-radius-3px;
     box-shadow: 0 1.5rem 4rem $shadow-black-40;
     position: absolute;
     width: 55%;
