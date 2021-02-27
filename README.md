@@ -1,1 +1,1 @@
-# SASS_CSS
+# CSS, Sass and responsive design.
