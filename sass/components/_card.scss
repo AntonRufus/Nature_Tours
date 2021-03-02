@@ -8,9 +8,11 @@
 
   &__side {
     border-radius: $border-radius-3px;
+    -moz-box-shadow: 0 2rem 5rem $shadow-black-25;
     box-shadow: 0 2rem 5rem $shadow-black-25;
     color: #999999;
     height: 52rem;
+    -moz-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     position: absolute;
     top: 0;
@@ -122,7 +124,7 @@
     }
   }
 
-  // FRONT SIDE STYLING
+  // BACK SIDE STYLING
   &__cta {
     @include centerHorizontalVertical;
 
