@@ -8,11 +8,12 @@
   padding: 25rem 0;
   margin-top: -15rem;
 
-  background-image: linear-gradient(
-                  to right bottom,
-                  rgba($color-primary-light, .8),
-                  rgba($color-primary-dark, .8)
-  ), url(../img/nat-4.jpg);
+  background-image: linear-gradient($to-right-bottom-primary-80), url(../img/nat-4-med.jpg);
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient($to-right-bottom-primary-80), url(../img/nat-4.jpg);
+  }
+
   background-size: cover;
 
   //-webkit-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
@@ -49,7 +50,7 @@
 
 .section-book {
   padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+  background-image: linear-gradient($to-right-bottom-primary);
 
   @include respond(tab-port) {
     padding: 10rem 0;
@@ -57,34 +58,27 @@
 }
 
 .book {
-  background-image: linear-gradient(
-                  105deg,
-                  rgba($color-white, .9) 0%,
-                  rgba($color-white, .9) 50%,
-            //rgba(0, 0, 0, 0) 50%),
-                  transparent 50%),
-  url(../img/nat-10.jpg);
+  background-image: linear-gradient($deg105-white-90-to50), url(../img/nat-10-med.jpg);
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient($deg105-white-90-to50), url(../img/nat-10.jpg);
+  }
+
   background-size: 100%;
   border-radius: $border-radius-3px;
   box-shadow: 0 1.5rem 4rem $shadow-black-25;;
 
   @include respond(tab-land) {
-    background-image: linear-gradient(
-                    105deg,
-                    rgba($color-white, .9) 0%,
-                    rgba($color-white, .9) 65%,
-                    transparent 65%),
-    url(../img/nat-10.jpg);
+    background-image: linear-gradient($deg105-white-90-to65), url(../img/nat-10-med.jpg);
     background-size: cover;
   }
 
   @include respond(tab-port) {
-    background-image: linear-gradient(
-                    90deg,
-                    rgba($color-white, .9) 0%,
-                    rgba($color-white, .9) 100%,
-                    transparent 100%),
-    url(../img/nat-10.jpg);
+    background-image: linear-gradient($deg105-white-90-to100), url(../img/nat-10-med.jpg);
+  }
+
+  @include respond(phone) {
+    background-image: linear-gradient($deg105-white-90-to100), url(../img/nat-10-small.jpg);
   }
 
   &__form {
