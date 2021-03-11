@@ -80,9 +80,27 @@
             </div>
             <div class="col-1-of-2">
                 <div class="composition">
-                    <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-                    <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                    <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                    <img alt="Photo 1"
+                         srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                         class="composition__photo composition__photo--p1"
+                         sizes="(max-width: 56.25em) 16vw, (max-width: 37.5em) 24vw, 18.75em"
+                         src="img/nat-1-large.jpg">
+
+                    <img alt="Photo 2"
+                         srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                         class="composition__photo composition__photo--p2"
+                         sizes="(max-width: 56.25em) 16vw, (max-width: 37.5em) 24vw, 18.75em"
+                         src="img/nat-2-large.jpg">
+
+                    <img alt="Photo 3"
+                         srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                         class="composition__photo composition__photo--p3"
+                         sizes="(max-width: 56.25em) 16vw, (max-width: 37.5em) 24vw, 18.75em"
+                         src="img/nat-3-large.jpg">
+
+                    <!--<img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo&#45;&#45;p1">
+                    <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo&#45;&#45;p2">
+                    <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo&#45;&#45;p3">-->
                 </div>
             </div>
         </div>
@@ -280,7 +298,13 @@
             <div class="row">
                 <div class="story">
                     <figure class="story__shape">
-                        <img src="img/nat-8.jpg" alt="Person on a tour" class="story__img">
+                        <img alt="Person on a tour"
+                             srcset="img/nat-8-small.jpg 300w, img/nat-8.jpg 2000w"
+                             class="story__img"
+                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 18.75em"
+                             src="img/nat-8.jpg">
+
+                        <!--<img src="img/nat-8.jpg" alt="Person on a tour" class="story__img">-->
                         <figcaption class="story__caption">Mary Smith</figcaption>
                     </figure>
                     <div class="story__text">
@@ -297,7 +321,13 @@
                 </div>
                 <div class="story">
                     <figure class="story__shape">
-                        <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img">
+                        <img alt="Person on a tour"
+                             srcset="img/nat-9-small.jpg 300w, img/nat-9.jpg 2000w"
+                             class="story__img"
+                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 18.75em"
+                             src="img/nat-9.jpg">
+
+                        <!--<img src="img/nat-9.jpg" alt="Person on a tour" class="story__img">-->
                         <figcaption class="story__caption">Jack Wilson</figcaption>
                     </figure>
                     <div class="story__text">
@@ -368,7 +398,13 @@
 
 <footer class="footer">
     <div class="footer__logo-box">
-        <a href="#"><img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo"></a>
+        <a href="#">
+            <picture>
+                <source srcset="img/logo-green-1x.png 1x" media="(max-width: 37.5rem)">
+                <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+            </picture>
+        </a>
+        <!--<a href="#"><img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" class="footer__logo"></a>-->
     </div>
 
     <div class="row">
@@ -401,8 +437,20 @@
     <div class="row">
         <div class="popup__content">
             <div class="popup__left">
-                <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
-                <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+                <img alt="Tour photo"
+                     srcset="img/nat-8-small.jpg 300w, img/nat-8.jpg 2000w"
+                     class="popup__img"
+                     sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 18.75em"
+                     src="img/nat-8.jpg">
+
+                <img alt="Tour photo"
+                     srcset="img/nat-9-small.jpg 300w, img/nat-9.jpg 2000w"
+                     class="popup__img"
+                     sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 18.75em"
+                     src="img/nat-9.jpg">
+
+                <!--<img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">-->
+                <!--<img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">-->
             </div>
             <div class="popup__right">
                 <a href="#section-tours" class="popup__close">&times;</a>

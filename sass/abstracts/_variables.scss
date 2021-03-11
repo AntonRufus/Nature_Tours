@@ -1,40 +1,61 @@
 //  COLOR
-$color-primary:             #55c57a;
-$color-primary-light:       #7ed56f;
-$color-primary-dark:        #28b485;
+$color-primary:                       #55c57a;
+$color-primary-light:                 #7ed56f;
+$color-primary-dark:                  #28b485;
 
-$color-secondary-light:     #ffb900;
-$color-secondary-dark:      #ff7730;
+$color-secondary-light:               #ffb900;
+$color-secondary-dark:                #ff7730;
 
-$color-tertiary-light:      #2998ff;
-$color-tertiary-dark:       #5643fa;
+$color-tertiary-light:                #2998ff;
+$color-tertiary-dark:                 #5643fa;
 
-$color-grey-light-1:        #f7f7f7;
-$color-grey-light-2:        #eee;
+$color-grey-light-1:                  #f7f7f7;
+$color-grey-light-2:                  #eee;
 
-$color-grey-dark-1:         #777;
-$color-grey-dark-2:         #999;
-$color-grey-dark-3:         #333;
+$color-grey-dark-1:                   #777;
+$color-grey-dark-2:                   #999;
+$color-grey-dark-3:                   #333;
 
-$color-white:               #fff;
+$color-white:                         #fff;
 $color-black: rgb(0, 0, 0);
 
 // FONT
-$default-font-size:         1.6rem;
+$default-font-size:                   1.6rem;
 
 //  GRID
-$grid-width:                114rem;
-$gutter-vertical:           8rem;
-$gutter-vertical-small:     6rem;
-$gutter-horizontal:         6rem;
+$grid-width:                          114rem;
+$gutter-vertical:                     8rem;
+$gutter-vertical-small:               6rem;
+$gutter-horizontal:                   6rem;
 
 // SHADOW
-$shadow-black-50:           rgba($color-black, .5);
-$shadow-black-40:           rgba($color-black, .4);
-$shadow-black-25:           rgba($color-black, .25);
-$shadow-black-20:           rgba($color-black, .2);
-$shadow-black-15:           rgba($color-black, .15);
-$shadow-primary-light-10:   rgba($color-primary-light, .1);
+$shadow-black-50:                     rgba($color-black, .5);
+$shadow-black-40:                     rgba($color-black, .4);
+$shadow-black-25:                     rgba($color-black, .25);
+$shadow-black-20:                     rgba($color-black, .2);
+$shadow-black-15:                     rgba($color-black, .15);
+$shadow-primary-light-10:             rgba($color-primary-light, .1);
 
 // SIZE
-$border-radius-3px:         .3rem;
+$border-radius-3px:                   .3rem;
+
+// BACKGROUND-IMAGE
+$to-right-primary:                    to right, $color-primary-light, $color-primary-dark;
+$to-right-bottom-primary:             to right bottom, $color-primary-light, $color-primary-dark;
+$to-right-bottom-primary-80:          to right bottom, rgba($color-primary-light, .8), rgba($color-primary-dark, .8);
+$to-right-bottom-primary-85:          to right bottom, rgba($color-primary-light, .85), rgba($color-primary-dark, .85);
+
+$to-left-primary:                     to left, $color-primary-light, $color-primary-dark;
+
+$to-right-bottom-secondary:           to right bottom, $color-secondary-light, $color-secondary-dark;
+$to-right-bottom-secondary-85:        to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85);
+
+$to-right-bottom-tertiary:            to right bottom, $color-tertiary-light, $color-tertiary-dark;
+$to-right-bottom-tertiary-85:         to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85);
+
+$to-bottom-black-0-30:                to bottom, rgba($color-black, 0), rgba($color-black, .3);
+
+$deg105-white-90-to50:                105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 50%, transparent 50%;
+$deg105-white-90-to65:                105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 65%, transparent 65%;
+$deg105-white-90-to100:               105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 100%, transparent 100%;
+$deg120-transparent-50-white-50:      120deg, transparent 0%, transparent 50%, $color-white 50%;
