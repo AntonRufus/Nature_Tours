@@ -1,13 +1,20 @@
 .header {
-  height: 96.5vh;
+  height: 80vh;
   background-size: cover;
   background-position: top;
   position: relative;
   background-image: linear-gradient($to-right-bottom-primary-80), url(../img/hero-small.jpg);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    height: 96.5vh;
+}
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+         only screen and (-webkit-device-pixel-ratio: 2) and (min-width: 37.5em),
+         only screen and (min-width: 125em) {
     background-image: linear-gradient($to-right-bottom-primary-80), url(../img/hero.jpg);
   }
 

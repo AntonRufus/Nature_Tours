@@ -20,16 +20,20 @@
     font-size: 6rem;
     margin-bottom: .5rem;
     display: inline-block;
-    background-image: linear-gradient($to-right-primary);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: $color-primary;
+
+    @supports (-webkit-background-clip: text) {
+      -webkit-background-clip: text;
+      background-image: linear-gradient($to-right-primary);
+      color: transparent;
+
+      &:hover {
+        background-image: linear-gradient($to-left-primary);
+      }
+    }
 
     @include respond(tab-port) {
       margin-bottom: 0;
-    }
-
-    &:hover {
-      background-image: linear-gradient($to-left-primary);
     }
   }
 

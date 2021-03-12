@@ -10,7 +10,9 @@
 
   background-image: linear-gradient($to-right-bottom-primary-80), url(../img/nat-4-med.jpg);
 
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+         only screen and (-webkit-device-pixel-ratio: 2) and (min-width: 37.5em),
+         only screen and (min-width: 125em) {
     background-image: linear-gradient($to-right-bottom-primary-80), url(../img/nat-4.jpg);
   }
 
@@ -60,7 +62,9 @@
 .book {
   background-image: linear-gradient($deg105-white-90-to50), url(../img/nat-10-med.jpg);
 
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+         only screen and (-webkit-device-pixel-ratio: 2) and (min-width: 37.5em),
+         only screen and (min-width: 125em) {
     background-image: linear-gradient($deg105-white-90-to50), url(../img/nat-10.jpg);
   }
 

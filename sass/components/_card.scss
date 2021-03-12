@@ -18,6 +18,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     overflow: hidden;
 
@@ -64,7 +65,9 @@
     &--1 {
       background-image: linear-gradient($to-right-bottom-secondary), url(../img/nat-5-med.jpg);
 
-      @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+             only screen and (-webkit-device-pixel-ratio: 2) and (min-width: 37.5em),
+             only screen and (min-width: 125em) {
         background-image: linear-gradient($to-right-bottom-secondary), url(../img/nat-5.jpg);
       }
 
@@ -76,7 +79,9 @@
     &--2 {
       background-image: linear-gradient($to-right-bottom-primary), url(../img/nat-6-med.jpg);
 
-      @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+             only screen and (-webkit-device-pixel-ratio: 2) and (min-width: 37.5em),
+             only screen and (min-width: 125em) {
         background-image: linear-gradient($to-right-bottom-primary), url(../img/nat-6.jpg);
       }
 
@@ -88,7 +93,9 @@
     &--3 {
       background-image: linear-gradient($to-right-bottom-tertiary), url(../img/nat-7-med.jpg);
 
-      @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+      @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+             only screen and (-webkit-device-pixel-ratio: 2) and (min-width: 37.5em),
+             only screen and (min-width: 125em) {
         background-image: linear-gradient($to-right-bottom-tertiary), url(../img/nat-7.jpg);
       }
 
@@ -173,7 +180,9 @@
   }
 
   // ADAPTIVE PART
-  @include respond(tab-port) {
+  //@include respond(tab-port) {
+  @media only screen and (max-width: 56.25em),
+         only screen and (hover: none) {
     height: auto;
     -moz-box-shadow: 0 1rem 3rem $shadow-black-20;
     box-shadow: 0 1rem 3rem $shadow-black-20;
