@@ -2,10 +2,10 @@
   "name": "naturetours",
   "version": "1.0.0",
   "description": "Landing page for naturetours",
-  "homepage": "https://github.com/AntonRufus/Nature_Tours/",
+  "homepage": "https://github.com/AntonRufus/nature_tours/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AntonRufus/Nature_Tours.git"
+    "url": "git+https://github.com/AntonRufus/nature_tours.git"
   },
   "author": "Anton Zhyvotovskyi",
   "license": "ISC",
@@ -22,7 +22,7 @@
     "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
   },
   "bugs": {
-    "url": "https://github.com/AntonRufus/Nature_Tours/issues"
+    "url": "https://github.com/AntonRufus/nature_tours/issues"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",

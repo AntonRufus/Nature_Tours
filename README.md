@@ -1,1 +1,1 @@
-# CSS, Sass and responsive design.
+# HTML, CSS, SASS (SCSS) and responsive design.
