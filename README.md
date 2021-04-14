@@ -4,7 +4,7 @@
 
 #### https://antonrufus.github.io/nature_tours/
 
-## Tech stach:
+## Tech stack:
 
    ### HTML,
 
