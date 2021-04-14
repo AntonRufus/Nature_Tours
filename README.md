@@ -2,7 +2,7 @@
 
 ## A landing page that includes modern CSS, animations and SASS. 
 
-#### https://antonrufus.github.io/social-network/
+#### https://antonrufus.github.io/nature_tours/
 
 ## Tech stach:
 
